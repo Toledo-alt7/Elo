@@ -1,0 +1,37 @@
+{
+  "name": "Link",
+  "type": "object",
+  "properties": {
+    "patient_user_id": {
+      "type": "string"
+    },
+    "patient_name": {
+      "type": "string"
+    },
+    "professional_user_id": {
+      "type": "string"
+    },
+    "professional_name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "active",
+        "ended"
+      ],
+      "enumColors": [
+        "yellow",
+        "green",
+        "gray"
+      ],
+      "default": "pending"
+    }
+  },
+  "required": [
+    "patient_user_id",
+    "professional_user_id",
+    "status"
+  ]
+}

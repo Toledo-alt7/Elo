@@ -1,0 +1,30 @@
+{
+  "name": "CalendarTopic",
+  "type": "object",
+  "properties": {
+    "patient_user_id": {
+      "type": "string"
+    },
+    "patient_name": {
+      "type": "string"
+    },
+    "professional_user_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "session_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "patient_user_id",
+    "title",
+    "date"
+  ]
+}

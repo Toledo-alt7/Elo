@@ -1,0 +1,31 @@
+{
+  "name": "AuroraMessage",
+  "type": "object",
+  "properties": {
+    "session_id": {
+      "type": "string"
+    },
+    "patient_user_id": {
+      "type": "string"
+    },
+    "sender": {
+      "type": "string",
+      "enum": [
+        "patient",
+        "aurora"
+      ],
+      "enumColors": [
+        "blue",
+        "purple"
+      ]
+    },
+    "content": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "session_id",
+    "sender",
+    "content"
+  ]
+}

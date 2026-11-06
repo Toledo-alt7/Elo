@@ -1,0 +1,20 @@
+{
+  "name": "ClinicalNote",
+  "type": "object",
+  "properties": {
+    "patient_user_id": {
+      "type": "string"
+    },
+    "professional_user_id": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "patient_user_id",
+    "professional_user_id",
+    "content"
+  ]
+}

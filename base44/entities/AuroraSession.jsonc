@@ -1,0 +1,100 @@
+{
+  "name": "AuroraSession",
+  "type": "object",
+  "properties": {
+    "patient_user_id": {
+      "type": "string"
+    },
+    "professional_user_id": {
+      "type": "string"
+    },
+    "patient_name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "open",
+        "finished"
+      ],
+      "enumColors": [
+        "blue",
+        "green"
+      ],
+      "default": "open"
+    },
+    "last_activity_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "finished_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "period_label": {
+      "type": "string"
+    },
+    "general_summary": {
+      "type": "string"
+    },
+    "important_events": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "reported_emotions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "recurring_topics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "positive_events": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "concerns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "discussion_topics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "main_topic": {
+      "type": "string"
+    },
+    "topic_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "generation_mode": {
+      "type": "string",
+      "enum": [
+        "ai",
+        "demonstrativo"
+      ],
+      "enumColors": [
+        "purple",
+        "yellow"
+      ],
+      "default": "ai"
+    }
+  },
+  "required": [
+    "patient_user_id",
+    "status"
+  ]
+}

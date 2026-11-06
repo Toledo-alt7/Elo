@@ -1,0 +1,56 @@
+{
+  "name": "Profile",
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "string"
+    },
+    "full_name": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string",
+      "enum": [
+        "patient",
+        "professional"
+      ],
+      "enumColors": [
+        "blue",
+        "purple"
+      ]
+    },
+    "phone": {
+      "type": "string"
+    },
+    "professional_registration": {
+      "type": "string"
+    },
+    "specialty": {
+      "type": "string"
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "verified"
+      ],
+      "enumColors": [
+        "yellow",
+        "green"
+      ],
+      "default": "pending"
+    },
+    "invite_code": {
+      "type": "string"
+    },
+    "onboarded": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "user_id",
+    "full_name",
+    "role"
+  ]
+}

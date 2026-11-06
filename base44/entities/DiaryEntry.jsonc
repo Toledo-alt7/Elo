@@ -1,0 +1,68 @@
+{
+  "name": "DiaryEntry",
+  "type": "object",
+  "properties": {
+    "patient_user_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "emotion": {
+      "type": "string",
+      "enum": [
+        "calmo",
+        "ansioso",
+        "esperancoso",
+        "cansado",
+        "triste",
+        "grato",
+        "irritado",
+        "sem_emocao"
+      ],
+      "enumColors": [
+        "blue",
+        "red",
+        "green",
+        "gray",
+        "purple",
+        "pink",
+        "yellow",
+        "gray"
+      ]
+    },
+    "intensity": {
+      "type": "number"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "occurred_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "published",
+        "draft"
+      ],
+      "enumColors": [
+        "green",
+        "gray"
+      ],
+      "default": "published"
+    }
+  },
+  "required": [
+    "patient_user_id",
+    "content",
+    "occurred_at"
+  ]
+}

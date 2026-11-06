@@ -1,0 +1,31 @@
+{
+  "name": "EmotionCheckin",
+  "type": "object",
+  "properties": {
+    "patient_user_id": {
+      "type": "string"
+    },
+    "emotion": {
+      "type": "string",
+      "enum": [
+        "calmo",
+        "ansioso",
+        "esperancoso",
+        "cansado"
+      ],
+      "enumColors": [
+        "blue",
+        "red",
+        "green",
+        "gray"
+      ]
+    },
+    "note": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "patient_user_id",
+    "emotion"
+  ]
+}
