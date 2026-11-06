@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 223 39% 7%;
+    --foreground: 210 40% 98%;
+    --card: 217 33% 18%;
+    --card-foreground: 210 40% 98%;
+    --popover: 221 39% 11%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 244 89% 65%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 221 39% 11%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 221 39% 13%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 258 90% 66%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 351 94% 71%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 158 64% 52%;
+    --border: 217 25% 24%;
+    --input: 217 25% 24%;
+    --ring: 244 89% 65%;
+    --radius: 1rem;
+    --chart-1: 244 89% 65%;
+    --chart-2: 213 94% 68%;
+    --chart-3: 258 90% 66%;
+    --chart-4: 158 64% 52%;
+    --chart-5: 351 94% 71%;
+    --font-heading: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --sidebar-background: 221 39% 11%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 244 89% 65%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 217 33% 18%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 25% 24%;
+    --sidebar-ring: 244 89% 65%;
+  }
+
+  .dark {
+    --background: 223 39% 7%;
+    --foreground: 210 40% 98%;
+    --card: 217 33% 18%;
+    --card-foreground: 210 40% 98%;
+    --popover: 221 39% 11%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 244 89% 65%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 221 39% 11%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 221 39% 13%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 258 90% 66%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 351 94% 71%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 158 64% 52%;
+    --border: 217 25% 24%;
+    --input: 217 25% 24%;
+    --ring: 244 89% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+}
