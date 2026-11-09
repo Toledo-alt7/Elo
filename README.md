@@ -183,4 +183,4 @@ O repositório **ainda não compila** como está. Antes de rodar, é preciso cor
 
 ## Licença
 
-[MIT](LICENSE) © 2026 Felipe de Toledo Moraes
+[MIT](LICENSE) © 2026 Felipe de Toledo Moraes & Joao Pedro Dib & Thalles Meirelles
